@@ -1,147 +1,171 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title data-title="Photography">Morning Run</title>
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://photos.grayvines.com/feed.xml">
-    <meta property="og:title" content="Morning Run">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://photos.grayvines.com//morning-run/">
-    <meta property="og:image" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
-    <meta property="og:site_name" content="Photography">
-    <meta property="og:description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
-    <meta name="thumbnail" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="Morning Run">
-    <meta name="twitter:description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
-    <meta name="twitter:image:src" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
-    <meta name="description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
-    <script type="text/javascript" src="/js/lazy-loading.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/master.css" />
-    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
-    <link rel="mask-icon" href="favicon.svg" />
-  </head>
-  <body>
-    <ul class="grid" id="target">
-      <li class="item target" id="morning-run" style="background-image: url('/photos/tint/Morning%20Run-65ba1d.jpg')" title="Morning Run">
-        <img class="lazyload" data-src="/photos/thumbnail/Morning%20Run-ccf4df.jpg" src="/photos/tint/Morning%20Run-65ba1d.jpg" height="926" width="1080" />
-        <span class="full">
-          <span style="background-image: url('/photos/large/Morning%20Run-686656.jpg')"></span>
-        </span>
-        <a class="open" href="/morning-run" data-target="morning-run">Open</a>
-        <a class="close" href="/">Close</a>
-        <!-- <ul class="meta">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title data-title="Photography">Morning Run</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://photos.grayvines.com/feed.xml">
+	<meta property="og:title" content="Morning Run">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://photos.grayvines.com//morning-run/">
+	<meta property="og:image" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
+	<meta property="og:site_name" content="Photography">
+	<meta property="og:description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
+	<meta name="thumbnail" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="Morning Run">
+	<meta name="twitter:description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
+	<meta name="twitter:image:src" content="https://photos.grayvines.com//photos/large/Morning%20Run-686656.jpg">
+	<meta name="description" content="@Julian trying to satisfy his photography hobby. Wanderlust included.">
+	<script type="text/javascript" src="/js/lazy-loading.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/master.css" />
+	<link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+	<link rel="mask-icon" href="favicon.svg" />
+</head>
+
+<body>
+	
+	<ul class="grid" id="target">
+		
+		
+	
+
+
+
+
+
+
+
+
+<li class="item target" id="morning-run" style="background-image: url('/photos/tint/Morning%20Run-65ba1d.jpg')" title="Morning Run">
+
+	<img class="lazyload" data-src="/photos/thumbnail/Morning%20Run-ccf4df.jpg" src="/photos/tint/Morning%20Run-65ba1d.jpg" height="926" width="1080" />
+	<span class="full">
+		<span style="background-image: url('/photos/large/Morning%20Run-686656.jpg')"></span>
+	</span>
+	<a class="open" href="/morning-run" data-target="morning-run">Open</a>
+	<a class="close" href="/">Close</a>
+
+    
+
+    
+
+    <!-- <ul class="meta">
     <li></li>
     <li></li>
     <li><span class="aperture"><em>f</em>/</span>0.0</li>
 	</ul> -->
-      </li>
-    </ul>
-    <ul class="links">
-      <li class="rss"><a rel="alternate" type="application/rss+xml" href="https://photos.grayvines.com/feed.xml" title="RSS Feed">RSS Feed</a></li>
-      <li class="github"><a rel="me" href="https://github.com/Julian/photography" title="Fork on Github">Fork on Github</a></li>
-      <li class="link"><a rel="me" href="https://mastodon.social/@JulianWasTaken" title="@JulianWasTaken on Mastodon">Mastodon</a></li>
-      <li class="link"><a rel="me" href="https://github.com/Julian" title="@Julian on Github">Github</a></li>
-      <li class="link"><a rel="me" href="https://instagram.com/julianberman" title="@julianberman on Instagram">Instagram</a></li>
-    </ul>
-    <script>
-      const ESCAPE = 27;
-      const RIGHT = 39;
-      const LEFT = 37;
-      const TARGET_CLASS = 'target';
-      
-      const clickNavigationButton = (buttonClass) => {
-        const id = window.history.state && window.history.state.id;
-        if (id) {
-          const selector = `#${id} ${buttonClass}`;
-          const button = document.querySelector(selector);
-          button && button.click();
-        }
-      }
-      
-      const openPhoto = (id, href) => {
-        const photo = document.getElementById(id);
-        const title = photo.getAttribute('title');
-        removeTargetClass();
-        photo.classList.add(TARGET_CLASS);
-        document.title = title;
-        if (href) {
-          window.history.pushState({id: id}, '', href);
-        }
-      }
-      
-      const closePhoto = (href) => {
-        const title = document.querySelector('head title').getAttribute('data-title');
-        removeTargetClass();
-        document.title = title;
-        if (href) {
-          window.history.pushState({}, '', href);
-        }
-      }
-      
-      const removeTargetClass = () => {
-        let targets = document.querySelectorAll(`.${TARGET_CLASS}`);
-        targets.forEach((target) => {
-          target.classList.remove(TARGET_CLASS);
-        });
-      }
-      
-      const handleClick = (selector, event, callback) => {
-        if (event.target.matches(selector)) {
-          callback();
-          event.preventDefault();
-        }
-      }
-      
-      const handleKey = (keyCode, event, callback) => {
-        if (event.keyCode === keyCode) {
-          callback();
-          event.preventDefault();
-        }
-      }
-      
-      window.onpopstate = function(event) {
-        if (event.state && event.state.id) {
-          const id = event.state.id;
-          openPhoto(id, null);
-        } else {
-          closePhoto(null);
-        }
-      }
-      
-      document.addEventListener('keydown', (event) => {
-        handleKey(ESCAPE, event, () => {
-          clickNavigationButton('.close');
-        });
-      
-        handleKey(RIGHT, event, () => {
-          clickNavigationButton('.next');
-        });
-      
-        handleKey(LEFT, event, () => {
-          clickNavigationButton('.previous');
-        });
-      });
-      
-      document.addEventListener('click', (event) => {
-        handleClick('[data-target][href]', event, () => {
-          const id = event.target.getAttribute('data-target');
-          const href = event.target.getAttribute('href');
-          openPhoto(id, href);
-        });
-      
-        handleClick('[href].close', event, () => {
-          const href = event.target.getAttribute('href');
-          closePhoto(href);
-        });
-      });
-      
-      lazyload();
-    </script>
-    <script src="/js/photos.js" data-photo-id="morning-run" data-photo-url="/morning-run" data-target-id="target"></script>
-  </body>
+</li>
+
+
+		</ul>
+		<ul class="links">
+			<li class="rss"><a rel="alternate" type="application/rss+xml" href="https://photos.grayvines.com/feed.xml" title="RSS Feed">RSS Feed</a></li>
+                        <li class="github"><a rel="me" href="https://github.com/Julian/photography" title="Fork on Github">Fork on Github</a></li>
+                        <li class="link"><a rel="me" href="https://mastodon.social/@JulianWasTaken" title="@JulianWasTaken on Mastodon">Mastodon</a></li>
+			<li class="link"><a rel="me" href="https://github.com/Julian" title="@Julian on Github">Github</a></li>
+			<li class="link"><a rel="me" href="https://instagram.com/julianberman" title="@julianberman on Instagram">Instagram</a></li>
+		</ul>
+		<script>
+  const ESCAPE = 27;
+  const RIGHT = 39;
+  const LEFT = 37;
+  const TARGET_CLASS = 'target';
+
+  const clickNavigationButton = (buttonClass) => {
+    const id = window.history.state && window.history.state.id;
+    if (id) {
+      const selector = `#${id} ${buttonClass}`;
+      const button = document.querySelector(selector);
+      button && button.click();
+    }
+  }
+
+  const openPhoto = (id, href) => {
+    const photo = document.getElementById(id);
+    const title = photo.getAttribute('title');
+    removeTargetClass();
+    photo.classList.add(TARGET_CLASS);
+    document.title = title;
+    if (href) {
+      window.history.pushState({id: id}, '', href);
+    }
+  }
+
+  const closePhoto = (href) => {
+    const title = document.querySelector('head title').getAttribute('data-title');
+    removeTargetClass();
+    document.title = title;
+    if (href) {
+      window.history.pushState({}, '', href);
+    }
+  }
+
+  const removeTargetClass = () => {
+    let targets = document.querySelectorAll(`.${TARGET_CLASS}`);
+    targets.forEach((target) => {
+      target.classList.remove(TARGET_CLASS);
+    });
+  }
+
+  const handleClick = (selector, event, callback) => {
+    if (event.target.matches(selector)) {
+      callback();
+      event.preventDefault();
+    }
+  }
+
+  const handleKey = (keyCode, event, callback) => {
+    if (event.keyCode === keyCode) {
+      callback();
+      event.preventDefault();
+    }
+  }
+
+  window.onpopstate = function(event) {
+    if (event.state && event.state.id) {
+      const id = event.state.id;
+      openPhoto(id, null);
+    } else {
+      closePhoto(null);
+    }
+  }
+
+  document.addEventListener('keydown', (event) => {
+    handleKey(ESCAPE, event, () => {
+      clickNavigationButton('.close');
+    });
+
+    handleKey(RIGHT, event, () => {
+      clickNavigationButton('.next');
+    });
+
+    handleKey(LEFT, event, () => {
+      clickNavigationButton('.previous');
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    handleClick('[data-target][href]', event, () => {
+      const id = event.target.getAttribute('data-target');
+      const href = event.target.getAttribute('href');
+      openPhoto(id, href);
+    });
+
+    handleClick('[href].close', event, () => {
+      const href = event.target.getAttribute('href');
+      closePhoto(href);
+    });
+  });
+
+  lazyload();
+</script>
+
+		
+			<script src="/js/photos.js" data-photo-id="morning-run" data-photo-url="/morning-run" data-target-id="target"></script>
+		
+</body>
 </html>
