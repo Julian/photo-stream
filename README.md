@@ -110,9 +110,9 @@ First thing you want to do is edit a couple of things in `/_config.yml`:
 - `description`: Description of your photo stream
 - `baseurl`: Should be `""` **⚠️ Do not change unless you know what you're doing**
 - `url`: Where will this photo stream live (example: `https://maxvoltar.photo`)
-- `twitter_username`: Your Twitter username
 - `github_username`: Your Github username
 - `instagram_username`: Your Instagram username
+- `mastodon_username`: Your Mastodon username
 
 Don't include the `@`-part of your social handles. By default links to your Github and Instagram profiles are hidden. You can uncomment these by going into `/index.html`. There, you can also add links to wherever you want. Just add more `<li>`'s with `class="link"` to the `<ul class="links">` list.
 
